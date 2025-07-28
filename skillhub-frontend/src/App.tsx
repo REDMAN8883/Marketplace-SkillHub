@@ -1,12 +1,13 @@
 // Importaciones de las pages 
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
-import Home from "./pages/Home";
+
 import Login from "./pages/Login";
 import ServiceDetail from "./pages/ServiceDetail"
 import Register from "./pages/Register";
 import Marketplace from "./pages/Marketplace";
 import Profile from "./pages/Profile";
+import Landing from "./pages/Landing";
 
 
 export default function App(){
@@ -14,7 +15,8 @@ export default function App(){
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route index element={<Home />}></Route>
+          
+          <Route path="/" element={<Landing />}></Route>
           
           <Route path="Login" element={<Login />}></Route>
           <Route path="Register" element={<Register />}></Route>
