@@ -1,16 +1,21 @@
 // JWT 
 
-import { api } from "./api";
+import  axios  from "./api";
+import type { LoginResponse } from "../types/auth";
 
-export const login = async (email: string, password: string) => {
+export const login = async (
+    email: string,
+    password: string
+): Promise<LoginResponse> => {
     try{
-        const res = await api.post("/auth/login", {email, password});
+        const res = await axios.post<LoginResponse>("/auth/login", {email, password});
         return res.data;
-    } catch (error: unknown) {
-        if (error instanceof Error) {
-            console.error(error.message);
+    } catch (error: unknown){
+        if(error instanceof Error){
+            console.error("Error de login:", error.message);
         } else {
-            console.error("Ocurrió un error desconocido");
+            console.log ("Error desconocido durante el login");
         }
+        throw error;
     }
-};
+}

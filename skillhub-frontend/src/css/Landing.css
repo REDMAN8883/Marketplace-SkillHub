@@ -1,0 +1,36 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    background-color: #0E0E0E;
+}
+
+/* ----------Barra del NAV --------- */
+nav{
+    margin: 20px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none; /* Desaparece los puntos */
+}
+
+li a{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    padding: 12px 16px;
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+a:hover{
+    transform: scaleY(1.1);
+    background-color: rgb(46, 45, 45);
+}
+
+/* ---------- Icons --------- */
+.bx:hover{
+    transform: scaleY(1.1);
+    background-color: rgb(46, 45, 45);
+}

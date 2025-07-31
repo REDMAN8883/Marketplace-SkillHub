@@ -1,5 +1,8 @@
-// src/pages/Landing.tsx
+
 import { Link } from 'react-router-dom';
+// import del csss
+import "../css/Landing.css"
+
 
 export default function Landing() {
   return (

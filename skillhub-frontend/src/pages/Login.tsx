@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
+import { login } from "../services/authServices";
 
 export default function Login(){
     
@@ -25,9 +26,11 @@ export default function Login(){
         event.preventDefault();
         setSubmit(true);
 
+        const {email, password} = values;
         try{
             const { token, user } = await login(email, password);
             localStorage.setItem("token", token);
+            localStorage.setItem("user", JSON.stringify(user));
 
             navigate("/profile");
         } catch (error){
