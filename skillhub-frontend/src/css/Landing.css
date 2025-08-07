@@ -1,36 +1,74 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    background-color: #0E0E0E;
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #0E0E0E; /* negro */
+  color: white; /* para que el texto sea visible sobre el fondo negro */
+}
+
+.container {
+  min-height: 100vh;  /* que llene toda la altura del viewport */
+  background-color: transparent; /* que no sobreescriba el fondo del body */
 }
 
 /* ----------Barra del NAV --------- */
-nav{
-    margin: 20px;
+.container-nav{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    margin: 20px 0;
 }
 ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     list-style: none; /* Desaparece los puntos */
+    background-color: rgb(46, 45, 45);
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 0;
 }
 
 li a{
     text-decoration: none;
     color: aliceblue;
-    display: block;
+    display: flex;
     padding: 12px 16px;
+    width: 100%;
     transform: scaleY(1);
-    transform-origin: top;
+    /* transform-origin: top; */
     transition: transform 0.3s ease, background-color 0.3s;
 }
 a:hover{
-    transform: scaleY(1.1);
-    background-color: rgb(46, 45, 45);
+    transform: scaleY(0.9);
+    background-color: #ff4f00;
+    color: black;
 }
 
-/* ---------- Icons --------- */
-.bx:hover{
-    transform: scaleY(1.1);
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ---------- Botones --------- */
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    background-color: #ff4f00;
+    color: black;
+    margin-bottom: 20px;
+}
+.btn:hover{
     background-color: rgb(46, 45, 45);
+    transition: 0.5s;
+    transform-origin: top;
 }
