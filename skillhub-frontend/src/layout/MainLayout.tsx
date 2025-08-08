@@ -15,7 +15,6 @@ export default function MainLayout(){
                         <li><Link to="/ServiceDetail"><i className='bx bxs-detail icon' >ServiceDetail</i></Link></li>
                     </ul>
             </nav>
-            <hr />
             <Outlet />
         </>
     );

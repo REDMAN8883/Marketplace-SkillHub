@@ -1,28 +1,35 @@
 
 import { Link } from 'react-router-dom';
 // import del css
-import "../css/Landing.css"
+// import "../css/Landing.css";
+// import de las imagenes
+import skillhub from "../assets/Image_Skillhub.png";
 
 
 export default function Landing() {
   return (
-    <div className="container py-5">
-        <div className="buttons mt-4">
-            <Link to="/login" className="btn btn-primary btn-sm me-3">
-              Iniciar Sesión
-            </Link>
-            <Link to="/registro" className="btn btn-outline-secondary btn-sm">
-              Regístrate
-            </Link>
-        </div>
+    <div className="container">
 
-      {/* Esto es mio */}
+      {/* Botones de inicio y registrar sesion */}
+      <div className="buttons">
+          <Link to="/login" className="btn btn-primary btn-sm me-3">
+            Iniciar Sesión
+          </Link>
+          <Link to="/registro" className="btn btn-outline-secondary btn-sm">
+            Regístrate
+          </Link>
+      </div>
+
+      
+
+      {/* Texto de bienvenida */}
       <div className="text-center">
         <h1 className="display-4 fw-bold">¡Bienvenido a SkillHub!</h1>
+        {/* Imagen de skillhub */}
+        <img src={skillhub} alt="Imagen de skillhub" className="Imagen_landing w-72 mx-auto" />
         <p className="lead">
             ¿Buscas a alguien que diseñe por ti? Tenemos al profesional indicado.
         </p>
-       
       </div>
 
       

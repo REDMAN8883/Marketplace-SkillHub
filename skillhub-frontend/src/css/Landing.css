@@ -1,23 +1,22 @@
 html, body {
-  height: 100%;
-  margin: 0;
-  background-color: #0E0E0E; /* negro */
-  color: white; /* para que el texto sea visible sobre el fondo negro */
+    height: 100%;
+    margin: 0;
+    background-color: #0E0E0E; /* negro */
+    color: white; /* para que el texto sea visible sobre el fondo negro */
 }
-
 .container {
-  min-height: 100vh;  /* que llene toda la altura del viewport */
-  background-color: transparent; /* que no sobreescriba el fondo del body */
+    min-height: 100vh;  /* que llene toda la altura del viewport */
+    background-color: transparent; /* que no sobreescriba el fondo del body */
+    
 }
 
 /* ----------Barra del NAV --------- */
 .container-nav{
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     background-color: transparent;
     width: 100%;
-    margin: 20px 0;
+    margin: 12px 0;
 }
 ul{
     display: flex;
@@ -32,7 +31,6 @@ ul{
     justify-content: space-around;
     padding: 0;
 }
-
 li a{
     text-decoration: none;
     color: aliceblue;
@@ -48,7 +46,6 @@ a:hover{
     background-color: #ff4f00;
     color: black;
 }
-
 .icon{
     display: flex;
     align-items: center;
@@ -61,7 +58,6 @@ a:hover{
     display: flex;
     justify-content: flex-end;
 }
-
 .btn{
     background-color: #ff4f00;
     color: black;
@@ -70,5 +66,15 @@ a:hover{
 .btn:hover{
     background-color: rgb(46, 45, 45);
     transition: 0.5s;
-    transform-origin: top;
+}
+
+/* ---------- Imagen del landing --------- */
+
+.Imagen_landing{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: default !important;
 }

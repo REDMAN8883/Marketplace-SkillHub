@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./router";
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/Landing.css";
 
-// Importacion de bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-const root = ReactDOM.createRoot(document.getElementById("root")!);
-
-root.render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App />
   </React.StrictMode>
 );

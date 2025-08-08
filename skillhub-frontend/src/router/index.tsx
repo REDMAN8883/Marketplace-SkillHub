@@ -25,4 +25,7 @@ export const router = createBrowserRouter([
             // Faltan rutas...
         ]
     },
-]);
+],
+
+
+);
