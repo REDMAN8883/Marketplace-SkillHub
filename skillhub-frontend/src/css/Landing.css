@@ -68,13 +68,28 @@ a:hover{
     transition: 0.5s;
 }
 
+/* ---------- Bienvenida  --------- */
+
+h1{
+    margin-bottom: 50px;
+}
+
 /* ---------- Imagen del landing --------- */
 
 .Imagen_landing{
-    width: 300px;
+    width: 450px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
     border: 1px solid white;
     cursor: default !important;
+    margin-bottom: 30px;
+}
+
+/* ---------- segunda seccion --------- */
+.section2{
+    background-color: rgb(20, 19, 19);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

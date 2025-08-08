@@ -35,20 +35,30 @@ export default function Landing() {
       
         {/* Esto no.. CAMBIAR o ADAPTAR */}
       {/* Sección de beneficios */}
-      <div className="row mt-5 text-center">
+      <section className="section2 row mt-5 text-center">
         <div className="col-md-4">
           <h3>Variedad de Servicios</h3>
-          <p>Encuentra desde plomeros hasta programadores.</p>
+            <i className='bx bxs-check-shield'>
+              <p>Encuentra desde plomeros hasta programadores.</p>
+            </i>
         </div>
         <div className="col-md-4">
           <h3>Pago Seguro</h3>
-          <p>Transacciones protegidas y garantizadas.</p>
+            <i className='bx bxs-credit-card'>
+              <p>Transacciones protegidas y garantizadas.</p>
+            </i>
         </div>
         <div className="col-md-4">
           <h3>Calificaciones reales</h3>
-          <p>Revisa opiniones antes de contratar.</p>
+            <i className='bx bxs-star-half'>
+              <p>Revisa opiniones antes de contratar.</p>
+            </i>
         </div>
-      </div>
+      </section>
+
+      <footer>
+        foooter
+      </footer>
     </div>
   );
 }
